@@ -1,12 +1,15 @@
 package com.techelevator.model;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public class Jokes {
 
+    @JsonProperty("icon_url")
     private String iconUrl;
     private String id;
     private String url;
     private String value;
-    private String category;
+    private String[] categories;
 
     public String getIconUrl() {
         return iconUrl;
@@ -40,11 +43,11 @@ public class Jokes {
         this.value = value;
     }
 
-    public String getCategory() {
-        return category;
+    public String[] getCategories() {
+        return categories;
     }
 
-    public void setCategory(String category) {
-        this.category = category;
+    public void setCategories(String[] categories) {
+        this.categories = categories;
     }
 }
