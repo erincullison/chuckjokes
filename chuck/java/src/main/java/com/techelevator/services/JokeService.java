@@ -12,5 +12,5 @@ public class JokeService {
 
     RestTemplate restTemplate = new RestTemplate();
 
-    
+
 }
