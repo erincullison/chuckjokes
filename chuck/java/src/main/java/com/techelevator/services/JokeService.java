@@ -26,6 +26,12 @@ public class JokeService {
         return joke;
 
     }
+    public Joke getJoke2() {
+        RestTemplate restTemplate = new RestTemplate();
+        Joke joke = restTemplate.getForObject(JOKES_API, Joke.class);
+        return joke;
+    }
+
 
 
     private HttpEntity<Void> makeEntity(){

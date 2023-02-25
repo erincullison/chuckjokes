@@ -15,5 +15,5 @@ public class JokeController {
     JokeService service;
 
     @GetMapping("/joke")
-    public Joke getJokeFromApi(){return service.getJoke();}
+    public Joke getJokeFromApi(){return service.getJoke2();}
 }
