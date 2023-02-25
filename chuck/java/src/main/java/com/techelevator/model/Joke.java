@@ -2,7 +2,7 @@ package com.techelevator.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class Jokes {
+public class Joke {
 
     @JsonProperty("icon_url")
     private String iconUrl;
